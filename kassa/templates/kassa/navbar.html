@@ -1,0 +1,56 @@
+{% load static %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!---<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">--->
+    <!---<link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">--->
+    <link rel='stylesheet' href="{% static 'css/style.css' %}">
+
+  
+
+
+    <nav>
+      <div class="logo"><i class="fas fa-plane-departure"></i>&nbsp&nbsp&nbspTez Bilet</div>
+      <label for='btn' class='icon'>
+        <i class="fas fa-bars"></i>
+      </label>
+      <input type='checkbox' id='btn'>
+
+
+      <ul>
+        <li><a href="/">Главная</a></li>
+        <li>
+        <label for="btn-1" class='show'>Сервисы</label>
+          <a href="#">Сервисы</a>
+          <input type='checkbox' id='btn-1'>
+            <ul>
+              <li><a href="https://c24.travelpayouts.com/click?shmarker=120716&promo_id=519&source_type=link&type=click&trs=36605">Страхование</a></li>
+              <li><a href="https://c102.travelpayouts.com/click?shmarker=120716&promo_id=2958&source_type=link&type=click&trs=36605">Сим карты</a></li>
+              <li><a href="https://c22.travelpayouts.com/click?shmarker=120716.120716&promo_id=2909&source_type=link&type=click&trs=36605">Трансферы</a></li>
+            </ul>
+        </li>
+        <li>
+        <label for="btn-2" class='show'>Туры +</label>
+        <a href="#">Туры</a>
+        <input type='checkbox' id='btn-2'>
+            <ul>
+              <li><a href="https://tp.media/r?marker=120716.120716&trs=36605&p=1919&u=https%3A%2F%2Fwww.dreamlines.ru%2F">Морские</a></li>
+              <li><a href="https://c174.travelpayouts.com/click?shmarker=120716.120716&promo_id=4984&source_type=link&type=click&trs=36605">Пакетные</a></li>
+              <li>
+                <a href="https://tp.media/r?marker=120716.120716&trs=36605&p=654&u=https%3A%2F%2Fweatlas.com%2F">Экскурсии
+                </a>
+              </li>
+            </ul>
+        </li>
+        <li><a href="{% url 'hotel' %}">Отели</a></li>
+        <li><a href="https://c135.travelpayouts.com/click?shmarker=120716.120716&promo_id=4070&source_type=link&type=click&trs=36605">ЖД Билеты</a></li>
+        <li><a style="font-size:23px;" href="https://www.facebook.com/tezbilet.ru/"><i class="fab fa-apple"></i></a></li>
+        <li><a style="font-size:23px;" href="https://www.instagram.com/tezbilet/"><i class="fab fa-google-play"></i></a></li>
+
+        
+
+      </ul>
+    </nav>
